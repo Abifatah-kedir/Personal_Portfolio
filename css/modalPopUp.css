@@ -1,0 +1,150 @@
+
+/*========================
+    Modal Pop up box.
+==========================/*
+
+/* The Modal (background) */
+.modal_window {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background: rgba(100, 109, 51, 0.9);
+
+    
+    /* background: rgba(10, 31, 14, 0.9); */
+    /* background: rgba(182, 126, 23, 0.9); */
+    /* background-color: red; */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(40,50,60,10);
+    font-family: 'Open-Sans', sans-serif;
+    position: relative;
+    border: 2px solid green;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top:0%;
+    right:1%;
+
+    color:yellow;
+    font-size: 2em;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color:#07f08f;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+ 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  padding:5px;
+}
+.prev {
+  left:0;
+  padding: 5px ;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* @media only screen and (max-width: 300px) {
+  .prev, .next {
+    font-size: 11px
+  } */
+
+.modal-body {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  margin: 0px auto;
+  flex-direction: column;
+
+}
+
+.modalP {
+  width: 90%;
+  height: auto;
+  font-size: 1em;
+  margin:  4px auto auto auto; 
+}
+
+.Technologies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #07f08f;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
+
+}
+
+.Technologies p {
+  font-size: 1em;
+}
+
+/* The dots/bullets/indicators */
+
+
+.TheDots {
+  display: none;
+  text-align:center;
+  margin-top: 50px;
+}
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotSelector {
+  background-color: #000;
+}
+
+/* .active, .dot:hover {
+  background: #000;;
+}   */
+  
+
+  
+  
+  

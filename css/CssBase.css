@@ -1,0 +1,762 @@
+
+
+/* =================================
+
+  Base Layout Styles
+==================================== */
+*, 
+*:before, 
+*:after {
+  box-sizing: border-box;
+}
+
+
+html, 
+body {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+      font-family: 'Open-Sans', sans-serif;
+      line-height: 1.6;
+      background-color: #3a3a3a;
+      color: white;
+}
+
+
+.bg-image
+{
+      /* Full height  and width*/
+      width: 100%;
+      height: 100vh; 
+      /* The image used */
+      /* background: linear-gradient(#4d4c4f, transparent 25%),  */
+      background: 
+                  /* linear-gradient(180deg, #4c4d4a, transparent 0%), */
+                  linear-gradient(45deg, #3a3939f8, transparent 30%), 
+                  linear-gradient(0deg, #3a3939f8, transparent 30%), 
+                  linear-gradient(-45deg, #3a3939f8, transparent 30%), 
+                  url("../images/paradox.JPG") no-repeat center;
+      background-size: cover;
+      
+      /* background-origin: content-box; */
+      /* margin-bottom: 50px; */
+      /* margin: 0px auto; */
+      /* border: 1px solid red; */
+  }
+
+  /* ---- Navigation ---- */
+
+/* h1,h2,p,a, li {
+  font-family: 'Abolition Regular',Helvetica, Arial, sans-serif;
+  letter-spacing: initial;
+  color:white;
+} */
+
+
+
+
+a,li {
+	text-decoration: none;
+  list-style-type: none;
+ }
+ a {
+   color: white;
+ }
+ p {
+  font-size: .9em;
+  margin-bottom: .1em;
+ } 
+
+
+ /* ======================================================
+    ======================================================
+      Navigation 
+  ========================================================
+  ======================================================*/
+
+  /* .main-nav,
+.The_header, */
+
+
+.main-header,
+.sticky{
+  display: flex;
+ 
+}
+
+.main-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #3d3b40; */
+  /* background-color: black; */
+  /* background-color: #28724b; */
+  /* background-color: #122114; */
+  /* #59626b; */
+  /* background-color: #3a3a3a; */
+
+  background: #011c1e;
+  height: 7%;
+  border-bottom: 3px solid #07f08f;
+
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+
+}
+
+.TheLogo {
+  margin: 0px auto 0px 10px;
+}
+
+/* The mobile Header */
+.mobile_Header,
+.smallScreenNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.mobile_Header {
+  height: 80px;
+} 
+
+/* The Bars */
+.TheBars {
+  margin: 0px 10px;
+}
+
+.TheBars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.bar {
+  align-items: flex-end;
+}
+.bar1, .bar2, .bar3 {
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.4s;  
+}
+.bar1 {
+  width: 35px;
+}
+.bar2 {
+  width: 30px;
+}
+.bar3 {
+  width: 25px;
+
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  width: 35px;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  width: 35px;
+}
+
+/* The big Screen Navigations */
+.smallScreenNav {
+  display: none;
+  height: 90%;
+  flex-direction: column;
+}
+
+.smallScreenNav li {
+  margin: 10px 0px;
+}
+
+.smallScreenNav li a {
+  padding: 6px 6px 0px 6px;  
+  font-size: 1.2em;
+ 
+}
+.smallScreenNav a:hover,
+.smallScreenNav a:active {
+  color:#3c9e5e8f;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* The sticky Header */
+.sticky {
+  position: fixed;
+  z-index: 100000;
+}
+
+.sticky 
+{
+  width: 100%;
+  background: rgba(2, 5, 3, 1);
+  box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.sticky{
+  top: 0;
+}  
+
+
+
+
+
+
+
+/* ===================================
+    Home
+  ====================================*/
+
+  .col4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    height: 80%;
+    margin: auto;
+
+    position: absolute;
+    top: 15%; 
+    left: 0; 
+    right: 0;
+    background: rgba(23, 36, 25, 0.3);
+   
+  } 
+    
+  .homePage {
+    margin: auto;
+  }
+  .homePage h1 {
+    font-size: 2.3em;
+    /* color: rgba(255, 255, 255, 1); */
+    /* color: rgba(114, 173, 134, 0.75); */
+ 
+    color: rgba(191, 206, 196, 0.75);
+    font-weight: bold;
+    line-height: 1.3;
+    text-shadow:  0 1px 2px rgb(0,0,0,.8);
+    margin: 12px 0 0;
+}
+.homePage h1:hover {
+  /* color: rgba(180, 221, 194, 0.75); */
+  text-shadow: 0 1px blue;
+}
+
+
+.arrow {
+  width: 40px;
+  margin: auto auto 40px auto;
+  
+}
+
+
+  
+
+
+
+ /* ======================================================
+    ======================================================
+      Main Container 
+  ========================================================
+  ======================================================*/
+
+  .main-container {
+    width: 100%;
+  }
+
+  .aboutPage,
+  .portfolio{
+    width: 95%;
+    margin: 5px auto;
+    padding: 0.3em;  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+  
+  } 
+  
+ /* Page titles styles */
+  .TitleName {
+    width: 100%; 
+    margin: 20px auto;
+    /* border: 1px solid red; */
+  }
+
+  .headingName h1 {
+    width: 140px;
+    font-size: 1.3em;
+    /* border: 1px solid red; */
+  }
+
+  .headingName h1:after {
+    content: " ";
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+    border-bottom: 1px solid #07f08f;
+  
+  }
+
+/* Section title */
+.sectionTittle {
+	position: relative;
+	left: 40%;
+	animation-name: pageName;
+	animation-duration: .4s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes pageName {
+	0% {left:0px; top:0px;}
+	100% { left:40%; top:0px;}
+  }
+
+
+
+
+ 
+  
+/* ===================================
+    ABOUT
+  ====================================*/
+
+.col1  {
+  width:100%;
+}
+
+  /* Profile Animation */
+  .pageProject {
+    animation-name: page;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .1s;
+  }
+  
+  @keyframes page {
+    from {background-color:#3a3a3a;} 
+    to {background-color: #011c1e;}
+  } 
+  
+.profile,
+.skill {
+  width: 100%;
+  box-shadow: 0px 2px  rgba(124, 241, 163, 0.75);
+  border-top: 2px  solid #07f08f;
+  background: #3a3a3a;
+}
+.profile {
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+.thePhto img:hover {
+	border: 2px solid black;
+}
+
+/* Profile image - styling and sizing */
+.profile_image,
+img {
+    width: 250px;
+    height: 250px; 
+    margin: auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+}
+.Profile_summery {
+  margin-top:80px;
+}
+.profile_image {
+    transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+.profile_image .thePhto {
+  width: 180px;
+  height: 180px;
+  transform: rotate(-45deg);
+}
+.profile_image img {
+  width: 100%;
+  height: auto;
+}
+.Profile_summery img {
+  margin: 1.3em 0 2em 0;
+}
+
+
+/* profile Note */
+.paragraph {
+  width: 98%;
+  margin: 5px auto;
+}
+.name,
+.careerName,
+.paragraph p,
+.portP,
+.formText p,
+.Name_SourceCode h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  color: #d4d6d5;
+}
+
+.name,
+.careerName,
+.skills-title {
+  text-align: center;
+}
+.name {
+  font-size: 2.3em;
+}
+.name,
+.skills-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 0px;
+
+  font-weight: bold;
+  margin: 0px;
+}
+
+
+.careerName {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  padding: 0px;
+}
+.paragraph  {
+  margin: 15px 10px;
+}
+
+
+/* skill Bar styling */
+
+.container {
+  width:98%;
+  height: 100%;
+  margin: 0px auto;
+  /* border: 1px solid red; */
+}
+.skillbar {
+	position:relative;
+	display:block;
+  margin-bottom: 20px;
+  transition-property: width, background-color;
+  width:100%;
+  background:#232329; 
+	border-radius:3px;
+  transition:0.4s linear;
+}
+
+
+.skillbar-title {
+  background: #27ae60;
+	position:absolute;
+	top:0;
+	left:0;
+  width:110px;
+  font-size: 1.2em;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:25px;
+	line-height:30px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  background: #2ecc71;
+	height:25px;
+	width:0px;
+	/* border-radius:3px; */
+}
+
+.skill-bar-percent 
+{
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:15px;
+	height:25px;
+	line-height:30px;
+	color: white;
+
+}
+.skill span {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ====================
+  Projects
+====================== */
+.col2 {
+  width: 100%;
+  padding: 3em 0em;
+  background: rgba(23, 36, 25, 0.4);
+  /* border: 1px solid red; */
+}
+.port,
+.work,
+.cont {
+    background-color: #3a3a3a;
+    /* #59626b; */
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid rgb(49, 47, 47);
+}
+
+.port {
+  /* background: url("../images/Game.jpg")  no-repeat center; */
+
+  /* background-color:rgba(23, 36, 25, 0.4); */
+  background: #011c1e;
+  /* border: 3px solid black; */
+
+  border-top: 2px solid #07f08f;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+
+
+}
+
+
+.Game {
+  background: url("../images/Game.PNG")  no-repeat center;
+}
+.API {
+  background: url("../images/API.PNG")  no-repeat center;
+}
+.Gallery {
+  background: url("../images/Gallary.JPG")  no-repeat center;
+}
+.Rform {
+  background: url("../images/form.PNG")  no-repeat center;
+}
+.WSGuide {
+  background: url("../images/WSGuide.JPG")  no-repeat center;
+}
+.webApp {
+  background: url("../images/Dashborad1.JPG")  no-repeat center;
+}
+
+.webApp,
+.Game,
+.API,
+.Gallery,
+.Rform,
+.WSGuide {
+  background-size: cover;
+}
+
+
+.Name_SourceCode a,
+.social {
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0px;
+  
+}
+a img {
+  width:35px;
+  height: 35px;
+}
+.social:hover {
+  border: 1px #27ae60 solid;
+}
+
+
+.Name_SourceCode {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 1em; 
+  border-bottom: .5px  solid #07f08f;
+}
+
+.Name_SourceCode h3 {
+  margin-right: auto;
+  font-size: 1.1em;
+  padding-bottom: 1px;
+
+}
+.portP p {
+  margin: 0px;
+  padding: 1em 1em 0em 1em; 
+  
+}
+
+.portP,
+.viewButton {
+  height:200px;
+  /* margin: 0px 10px; */
+  margin:  0px;
+
+}
+
+.portP {
+  position: relative;
+}
+.viewButton {
+  /* background: rgba(155, 145, 2, 0.863); */
+  background:#3c9e5e8f;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 150px;
+  background: #011c1e;
+  color: #d5d5d8; 
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5%;
+  border: .5px  solid #07f08f;
+
+}
+
+
+
+
+
+
+
+
+/* ================
+  Contact
+  =================*/
+
+  /* .col1, */
+  .col2,
+  .col3 {
+    margin-top: 4em;
+  }
+
+  /* Add a background color and some padding around the form */
+  .contact {
+    width: 100%;
+    height: 100%;
+    background-color: #011c1e;
+    border-top: 2px solid #07f08f;
+    /* border: 1px solid red; */
+  }
+
+  .formText,
+  form {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .formText {
+    text-align: center;
+  }
+  .col-contact,
+  .submitButtom {
+    width: 98%;
+    display: flex;
+   margin: 5px auto;
+  }
+
+  input[type=text] {
+    margin: 5px 0px;
+    width: 100%;
+  }
+
+  .col-text {
+    width: 98%;
+    margin: 10px auto;
+
+  }
+  textarea[id="subject"]  {
+    width: 100%;
+
+  }
+
+   /* Style inputs with type="text", select elements and textareas */
+input[type=text],textarea[id="subject"] {
+  background: rgb(63, 62, 62);
+  padding: 12px; 
+  /* border: 1px solid #ccc;  */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+}
+
+/* Style the submit button with a specific background color etc */
+.submitButtom {
+  justify-content: flex-end;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+.Hide_content {
+  display: none;
+  /* transition-property:  viewButton;
+  transition-duration: .5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-out; */
+}
+
+.show_Content {
+  display: flex;
+}
+
+/* --- Clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}

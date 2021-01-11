@@ -1,0 +1,239 @@
+
+/*
+	================================= 
+	Base styles 
+	=================================
+*/
+
+/* ===================================
+    ABOUT
+  ==================================== */
+
+
+/* 
+	==================================== 
+	Media Queries
+	====================================
+*/
+
+
+
+
+@media (max-width: 271px) {
+	.profile_image,img {
+		width: 150px;
+		height: 150px; 
+	}
+	.profile_image .thePhto {
+		width: 90px;
+		height: 90px;
+	}
+
+	/* Section title */
+
+	/* .sectionTittle {
+		left: 23%;
+	}
+	@keyframes pageName {
+	0% {left:0px; top:0px;}
+	100% { left: 23%; top:0px;}
+  } */
+}
+
+@media (max-width: 400px) {
+	
+	.profile_image,img {
+		width: 200px;
+		height: 200px; 
+	}
+	.profile_image .thePhto {
+		width: 150px;
+		height: 150px;
+	}
+
+	.aboutPage,
+	.portfolio {
+		width: 95%;
+		margin: 5px auto;
+		padding: 0.3em;   
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 1rem;
+	}
+
+	.TitleName {
+		width: 100%; 
+	}
+
+	.headingName h1 {
+		width: 100px;
+		font-size: 1.1em;
+		margin: 10px;
+	}
+
+	/* Section title */
+	.sectionTittle {
+		position: relative;
+		left: 33%;
+		/* animation-name: pageName;
+		animation-duration: .4s;
+		animation-timing-function: ease-out; */
+	}
+
+	@keyframes pageName {
+		0% {left:0px; top:0px;}
+		100% { left:33%; top:0px;}
+	}
+
+}
+
+@media (min-width: 768px)  {
+
+
+	/* ==========================
+		Navigation Menu Styling.
+	=============================*/
+	.sticky 
+	{
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  color: white;
+	  /* background-color: #3d3b40; */
+	  -webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+	  -moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+	  box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+	}
+
+	/* 
+		================================
+			Main-Container media queries
+		============================== 
+	*/
+
+
+ 
+	  .homePage h1 {
+		font-size: 4em;
+	  }
+	
+	  .profile {
+		margin-bottom: 0px;
+		/* border-bottom: */
+		box-shadow: 0px 2px  rgba(124, 241, 163, 0.75);;
+	  }
+	/* modal Pop up */
+	.modal-content {
+		width: 80%;
+	}
+	.Technologies {
+		flex-direction: row;
+	}
+	.Technologies p {
+		font-size: 1.2em;
+		margin-right: auto;
+	}
+	.modalP {
+		font-size: 1.5em;
+	}
+	.prev, .next {
+		padding: 16px;
+	}
+	.port p {
+		margin-bottom: auto;
+		}
+
+	.UsedTools p {
+		padding: 3px;
+		margin: 3px;
+		font-size: 1em;
+		}
+
+
+	/* Section title */
+	.sectionTittle {
+		left: 42%;
+	
+		}
+		
+	@keyframes pageName {
+	0% {left:0px; top:0px;}
+	100% { left:42%; top:0px;}
+	
+	}
+}
+
+
+
+@media (min-width: 999px){
+	.mobile_Header  {
+		display: none;
+	}
+	.smallScreenNav 
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		height: 100%;
+		margin: 0px;
+
+	}
+	.smallScreenNav li {
+		margin: 0px 10px;
+	}
+
+	.col1,
+	.col2,
+	.col3 {
+	  /* border:1px solid red; */
+	  height: 100%;
+	}
+	.aboutPage,
+	.contact,
+	.skills {
+		padding: 6px;
+	}
+
+	/* Section title */
+	.sectionTittle {
+		left: 45%;
+	
+		}
+		
+	@keyframes pageName {
+	0% {left:0px; top:0px;}
+	100% { left:45%; top:0px;}
+	
+	}
+
+	
+	/* modal Pop up */
+
+	.modal-content {
+		width: 60%;
+	}
+
+
+
+	
+	/* ===============
+	Contact
+	==================*/
+
+	.formText,
+	form {
+		width: 60%;
+	}
+
+
+
+}
+
+
+.Hide_content {
+	display: none;
+  }
+
+
+
+  
